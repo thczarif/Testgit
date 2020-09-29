@@ -1,0 +1,110 @@
+## start coding here
+
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\usepackage{mypackages}
+
+\usepackage{tcb}
+
+\usepackage{shortcuts}
+
+
+
+\author{\textbf{thczarif}}
+\title{\textbf{Po Shen Loh and Adrian Tang Graph Theory}}
+
+
+\begin{document}
+	
+	
+	
+	\fon{cmss}
+	
+	\maketitle
+	
+	
+	
+	\section*{Adrian Tang's Note}
+	
+	
+	\prob{1.3}{Let $G$ be a disconnected graph. Prove that its complement $\overline{G}$ is \mbox{connected}.}
+	
+	
+	
+	
+	
+	
+	
+	\solu{diside the graph into connected components. Now in the complement graph $\overline{G}$ the vettices which were not in the same component are now connected by an edge. and let $a,b$ be two vertices in the same component and $c$ is in another component. Thus $a,c$ and $b,c$ are connected thus there is a path $a \ra c \ra b$, thus $\overline{G}$ is connected. }
+	
+	
+	
+	
+	
+	
+	
+	
+	\prob{1.4}{Let $G$ be a connected graph. Prove that two paths which are both a longest path in the graph, contain at least one vertex in common.}
+	
+	
+	
+	
+	\solu{}
+	
+	
+	
+	
+	
+	
+	\prob{1.8}{Let $G$ be a connected graph with an even number of vertices. Prove that you can select a subset of edges of $G$ such that each vertex is incident to an odd number of selected edges.}
+	
+	
+	
+	
+	
+	
+	\solu{At first check the smaller cases. Then we will use strong induction.\\\\
+	As the graph is connected we can find a \textbf{spanning tree}. Now if all the degree are odd we are done. If not then there exists some vertex $v_1$ which has degree even. Now consider the vertex $v_1$ as the root of the graph. Now the graph without $v_1$ has odd number of vertices in even number of parts (not containing $v_1$). Thus at least one of the parts contain even number of vertices. Now disconnect the edge that connects $v_1$ and that part. This breaks the graph into two even sized smaller graphs (one containing $v_1$). Now we are done by storng induction.}
+	
+	
+	
+	
+	
+	
+	
+	
+	\prob{1.9 (Italy 2007)}{Let $n$ be a positive odd integer. There are $n$ computers and exactly one cable joining each pair of computers. You are to colour the computers and cables such that no two computers have the same colour, no two cables joined to a common computer have the same colour, and no computer is assigned the same colour as any cable joined to it. Prove that this can be done using $n$ colours.}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\newpage
+	
+	
+	
+	\section*{Po Shen Loh's Note}
+	
+	
+	
+	
+
+
+
+
+
+\end{document}
